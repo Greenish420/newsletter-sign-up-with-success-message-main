@@ -1,0 +1,142 @@
+* {
+  font-family: info_font;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  cursor: default;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #36384eff;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.card {
+  justify-content: space-between;
+  padding: 25px;
+
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 25px;
+  width: fit-content;
+  background-color: white;
+  border-radius: 25px;
+}
+.image {
+  width: 50%;
+}
+.information {
+  padding-inline: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  width: 55%;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+li::before {
+  content: "";
+  display: inline-block;
+  width: 20px; /* size of your image */
+  height: 20px;
+  margin-right: 10px;
+  background-image: url("assets/images/icon-success.svg");
+  background-size: cover;
+  vertical-align: middle;
+}
+
+li {
+  margin-bottom: 20px;
+  text-wrap: nowrap;
+}
+.info_header h1 {
+  font-family: info_header_font;
+  font-size: 60px;
+  color: #242742ff;
+}
+
+.info_header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.info_header p {
+  width: 370px;
+}
+
+.info_footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: smaller;
+  width: 100%;
+  gap: 15px;
+}
+
+.email {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.email input {
+  padding: 15px;
+  border: 1px grey solid;
+  border-radius: 10px;
+  width: 100%;
+  height: 55px;
+  cursor: text;
+  transition: 0.2s ease-in-out;
+}
+
+.email input:hover{
+  transform: scale(1.05);
+}
+
+.info_footer button {
+  border-radius: 10px;
+  width: 100%;
+  height: 55px;
+  background-color: #242742ff;
+  border-color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.subscribe_btn {
+  font-weight: 600;
+  color: white;
+}
+
+.subscribe_btn:hover{
+  background-color: rgb(28, 31, 53);
+  transform: scale(1.05);
+  
+}
+.subscribe_btn:active{
+  background-color: rgb(49, 53, 87);
+  transform: scale(0.95);
+  
+}
+
+.subscribe_btn p {
+  cursor: pointer;
+}
